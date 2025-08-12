@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: bhindusuma/n01722869-nginx
+  repository: bhindusuma/n01722869
   pullPolicy: IfNotPresent
   tag: "latest"
 
