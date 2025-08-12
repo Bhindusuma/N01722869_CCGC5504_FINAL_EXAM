@@ -1,0 +1,23 @@
+replicaCount: 1
+
+image:
+  repository: bhindusuma/n01722869-nginx
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 32110
+
+resources: {}
+
+autoscaling:
+  enabled: false
+
+ingress:
+  enabled: false
+
+serviceAccount:
+  create: false
+  name: ""
