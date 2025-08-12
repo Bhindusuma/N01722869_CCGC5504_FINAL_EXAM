@@ -27,9 +27,10 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.IMAGE_REPO }}:latest
-            ${{ secrets.IMAGE_REPO }}:v0.1
-            ${{ secrets.IMAGE_REPO }}:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/n01722869:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/n01722869:v0.1
+            ${{ secrets.DOCKERHUB_USERNAME }}/n01722869:${{ github.sha }}
           labels: |
             org.opencontainers.image.source=${{ github.repository }}
             org.opencontainers.image.revision=${{ github.sha }}
+
