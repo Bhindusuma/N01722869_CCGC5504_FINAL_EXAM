@@ -1,0 +1,9 @@
+!.github/
+!.github/workflows/
+!.github/workflows/*.yml
+!.github/
+!.github/workflows/
+!.github/workflows/*.yml
+.*
+*.log
+node_modules/
